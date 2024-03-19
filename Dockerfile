@@ -27,3 +27,7 @@ ENV REDIS_HOST="cache"
 
 # Expose port 8080
 EXPOSE 8080
+
+COPY set_db_host.sh /app/set_db_host.sh
+RUN chmod +x /app/set_db_host.sh
+CMD ["/bin/bash", "/app/set_db_host.sh"]
