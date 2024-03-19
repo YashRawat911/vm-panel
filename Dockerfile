@@ -42,7 +42,6 @@ EXPOSE 443
 COPY ./nginx/ /etc/nginx/http.d/
 
 # Copy the Let's Encrypt certificates into the container
-COPY ./certs/ /etc/letsencrypt/
 
 # Copy the logs directory into the container
 COPY ./logs/ /app/storage/logs/
