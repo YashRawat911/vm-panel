@@ -1,0 +1,8 @@
+# Use the official MariaDB image
+FROM mariadb:10.5
+
+# Set environment variables
+ENV MYSQL_DATABASE="panel"
+ENV MYSQL_USER="pterodactyl"
+ENV MYSQL_PASSWORD="CHANGE_ME"
+ENV MYSQL_ROOT_PASSWORD="CHANGE_ME_TOO"
